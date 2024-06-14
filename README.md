@@ -7,12 +7,19 @@ Visão Geral
 A API JWT User suporta autenticação com JSON Web Tokens (JWT). Isso facilita a autenticação de usuários e a emissão de tokens JWT para acessar endpoints seguros.
 
 APIs Disponíveis
+
 POST /login: Endpoint de autenticação para obter um token JWT.
+
 GET /username/{token}: Rota que obtém o nome de usuário a partir de um token JWT.
+
 GET /user: Rota que obtém informações sobre o usuário autenticado.
+
 GET /admin: Rota protegida acessível apenas por usuários com a função ADMIN.
+
 GET /moderado: Rota protegida acessível apenas por usuários com a função MODERADO.
+
 GET /comum: Rota acessível por usuários comuns.
+
 Guia de Introdução
 Para começar a usar a API JWT User, siga estes passos:
 

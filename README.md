@@ -1,7 +1,9 @@
 # Arquitetura-de-Aplicacoes-Web
 
 Documentação da API JWT User
+
 Visão Geral
+
 A API JWT User suporta autenticação com JSON Web Tokens (JWT). Isso facilita a autenticação de usuários e a emissão de tokens JWT para acessar endpoints seguros.
 
 APIs Disponíveis

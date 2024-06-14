@@ -60,3 +60,23 @@ Dê uma olhada em nossos tutoriais para ver exemplos detalhados do uso da API. V
 Diagrama - JWT
 
 <img width="328" alt="2024-06-14_19h03_18" src="https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/ece95c54-a4fa-4e08-9127-3d193eb46e27">
+
+Imagens do Insomnia em execusão: 
+
+![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/07b1d97d-230d-49c1-bf4a-e9da8fc25a8c)
+
+![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/078c25d7-1c76-41b0-aa7b-e1132eb417c8)
+
+![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/152b3dbc-c977-4a26-8d59-413901ff0f3a)
+
+![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/2aa6aa81-9dcc-4c8d-844c-6da8b8122e75)
+
+![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/9ecca62d-890d-4b13-96a8-f2a7e4b4b2f4)
+
+![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/4b1720c7-5bda-49a6-a95c-b3f848a1edeb)
+
+
+
+
+
+

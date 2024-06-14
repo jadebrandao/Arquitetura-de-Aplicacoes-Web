@@ -8,28 +8,27 @@ Visão Geral
 
 APIs Disponíveis 
 
- POST /login: O endpoint de autenticação para obter um token de JWT. GET /username/{token}: Rota que obtém o nome de usuário de um token JWT. GET /user: Rota que obtém as informações do usuário autenticado. GET /admin: Rota protegida que só pode ser acessada por usuários com função ADMIN. GET /moderado: Rota protegida que só pode ser acessada por usuários com função MODERADO. GET /comum: Rota que pode ser acessada por um usuário comum. 
+ POST /login: O endpoint de autenticação para obter um token de JWT. 
+ GET /username/{token}: Rota que obtém o nome de usuário de um token JWT.
+ GET /user: Rota que obtém as informações do usuário autenticado. 
+ GET /admin: Rota protegida que só pode ser acessada por usuários com função ADMIN.
+ GET /moderado: Rota protegida que só pode ser acessada por usuários com função MODERADO. 
+ GET /comum: Rota que pode ser acessada por um usuário comum. 
 
-Guia de Introdução  
-
+Guia de Introdução: 
 Caso você queira começar a usar la API de ((nombre del producto)), veja como fazer: 
-
 Obtenha uma chave de API ativa para que você possa autenticar suas solicitações. Garanta que a chave de API em cada solicitação que você fizer para os pontos finais da API seja válida. Toda solicitação que você fizer deve ser feita por HTTPS. O formato em que você receberá respostas da API é JSON. 
 
-Autenticação 
-
- A API ((product_name)) autentica chamadas usando um token JWT. 
+Autenticação: 
+A API ((product_name)) autentica chamadas usando um token JWT. 
 
 Para autenticar a solicitação:  
-
 Você precisa de um token JWT fornecido pelo ponto de extremidade POST /login. Passe o token JWT no cabeçalho da solicitação de chamadas seguintes (Autorização: Portador {token}). 
 
-Erro de Resposta de Autenticação 
+Erro de Resposta de Autenticação:
+Se uma chave de API estiver ausente ou for inválida/malformada, a resposta retornará um código de status HTTP 401 Não Autorizado. 
 
- Se uma chave de API estiver ausente ou for inválida/malformada, a resposta retornará um código de status HTTP 401 Não Autorizado. 
-
-Testes Realizados no Insomnia  
-
+Testes Realizados no Insomnia: 
 Os testes da API do ((nome do produto)) foram realizados no Insomnia. Você pode baixar a coleção de testes e, a partir disso, importar diretamente para o Insomnia para testar os endpoints e o comportamento da API. 
 
 Vincular a coleção de testes em Insomnia 
@@ -43,7 +42,6 @@ Limites de Taxa e Uso
 Códigos de status: Você receberá uma resposta HTTP 429 Too Many Requests se exceder o limite de taxa.  
 
 Cabeçalhos de resposta: 
-
  X-RateLimit-Limite: O número de solicitações permitidas no máximo por minuto. X-RateLimit-Restante: O número de solicitações restantes na janela de limite de taxa atual.  
 
 X-RateLimit-Redefinição: O carimbo de data/hora em que a janela de limite de taxa atual será redefinida em segundos do éon UTC. 
@@ -55,7 +53,6 @@ Resposta 503
 Precisa de Ajuda?  
 
 Para mais informações ou ajuda, consulte o seguinte: 
-
 Dê uma olhada em nossos tutoriais para ver exemplos detalhados do uso da API. Verifique nossa seção de perguntas frequentes para ver as respostas das perguntas mais comuns. Junte-se à nossa comunidade e use o fórum para trocar ideias com outros desenvolvedores e obter suporte. 
 
  

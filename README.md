@@ -79,6 +79,10 @@ Imagens do Insomnia em execusão:
 
 ![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/4b1720c7-5bda-49a6-a95c-b3f848a1edeb)
 
+EXEMPLO DE USER NÃO AUTORIZADO:
+
+![image](https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/ee301811-2a9b-4e29-a2a8-46c8c69e2854)
+
 
 
 

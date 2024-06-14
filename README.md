@@ -1,61 +1,56 @@
 # Arquitetura-de-Aplicacoes-Web
 
-API documentation - JWT
+Documentação da API JWT User
+Visão Geral
+A API JWT User suporta autenticação com JSON Web Tokens (JWT). Isso facilita a autenticação de usuários e a emissão de tokens JWT para acessar endpoints seguros.
 
-Visão Geral 
+APIs Disponíveis
+POST /login: Endpoint de autenticação para obter um token JWT.
+GET /username/{token}: Rota que obtém o nome de usuário a partir de um token JWT.
+GET /user: Rota que obtém informações sobre o usuário autenticado.
+GET /admin: Rota protegida acessível apenas por usuários com a função ADMIN.
+GET /moderado: Rota protegida acessível apenas por usuários com a função MODERADO.
+GET /comum: Rota acessível por usuários comuns.
+Guia de Introdução
+Para começar a usar a API JWT User, siga estes passos:
 
- A JWT – User  API suporta autenticação com JSON Web Tokens (JWT). Isso suporta autenticação de usuário e emissão de tokens de JWT para acessar endpoints seguros. 
+Obtenha uma chave de API ativa para autenticar suas solicitações.
+Certifique-se de que a chave de API esteja incluída em cada solicitação para os endpoints da API.
+Todas as solicitações devem ser feitas por HTTPS.
+As respostas da API estão no formato JSON.
+Autenticação
+A API autentica as chamadas usando um token JWT.
 
-APIs Disponíveis 
+Para autenticar uma solicitação:
+Obtenha um token JWT no endpoint POST /login.
+Passe o token JWT no cabeçalho da solicitação para chamadas subsequentes (Authorization: Bearer {token}).
+Resposta de Erro de Autenticação:
+Se uma chave de API estiver ausente ou inválida/malformada, a resposta retornará um código de status HTTP 401 Não Autorizado.
 
- POST /login: O endpoint de autenticação para obter um token de JWT. 
- GET /username/{token}: Rota que obtém o nome de usuário de um token JWT.
- GET /user: Rota que obtém as informações do usuário autenticado. 
- GET /admin: Rota protegida que só pode ser acessada por usuários com função ADMIN.
- GET /moderado: Rota protegida que só pode ser acessada por usuários com função MODERADO. 
- GET /comum: Rota que pode ser acessada por um usuário comum. 
+Testes com Insomnia
+A API JWT User foi testada usando o Insomnia. Você pode baixar a coleção de testes e importá-la diretamente no Insomnia para testar os endpoints e o comportamento da API.
 
-Guia de Introdução: 
-Caso você queira começar a usar la API de ((nombre del producto)), veja como fazer: 
-Obtenha uma chave de API ativa para que você possa autenticar suas solicitações. Garanta que a chave de API em cada solicitação que você fizer para os pontos finais da API seja válida. Toda solicitação que você fizer deve ser feita por HTTPS. O formato em que você receberá respostas da API é JSON. 
+Link para a Coleção de Testes no Insomnia
+Baixar Coleção do Insomnia
 
-Autenticação: 
-A API ((product_name)) autentica chamadas usando um token JWT. 
+Limites de Taxa e Uso
+Os limites de taxa e uso da API JWT User são os seguintes:
 
-Para autenticar a solicitação:  
-Você precisa de um token JWT fornecido pelo ponto de extremidade POST /login. Passe o token JWT no cabeçalho da solicitação de chamadas seguintes (Autorização: Portador {token}). 
+Limite de Taxa: 300 solicitações por minuto por chave de API.
+Código de Status: Você receberá uma resposta HTTP 429 Too Many Requests se exceder o limite de taxa.
+Cabeçalhos de Resposta:
+X-RateLimit-Limit: O número máximo de solicitações permitidas por minuto.
+X-RateLimit-Remaining: O número de solicitações restantes na janela de limite de taxa atual.
+X-RateLimit-Reset: O timestamp de quando a janela de limite de taxa atual será redefinida, em segundos do éon UTC.
+Resposta HTTP 503
+Uma resposta HTTP 503 indica que o tráfego da API aumentou inesperadamente. O servidor deve retornar ao normal em um máximo de cinco minutos. Se o problema persistir ou se você continuar recebendo qualquer erro HTTP 5XX, sinta-se à vontade para contatar a equipe de suporte.
 
-Erro de Resposta de Autenticação:
-Se uma chave de API estiver ausente ou for inválida/malformada, a resposta retornará um código de status HTTP 401 Não Autorizado. 
+Precisa de Ajuda?
+Para mais informações ou assistência, consulte os seguintes recursos:
 
-Testes Realizados no Insomnia: 
-Os testes da API do ((nome do produto)) foram realizados no Insomnia. Você pode baixar a coleção de testes e, a partir disso, importar diretamente para o Insomnia para testar os endpoints e o comportamento da API. 
-
-Vincular a coleção de testes em Insomnia 
-
-Limites de Taxa e Uso 
-
- Os limites de taxa e uso da API JWT - User são os seguintes: 
-
- Limite de taxa: 300 solicitações por minuto por chave de API.  
-
-Códigos de status: Você receberá uma resposta HTTP 429 Too Many Requests se exceder o limite de taxa.  
-
-Cabeçalhos de resposta: 
- X-RateLimit-Limite: O número de solicitações permitidas no máximo por minuto. X-RateLimit-Restante: O número de solicitações restantes na janela de limite de taxa atual.  
-
-X-RateLimit-Redefinição: O carimbo de data/hora em que a janela de limite de taxa atual será redefinida em segundos do éon UTC. 
-
-Resposta 503 
-
- Uma resposta HTTP 503 é um sinal de que o tráfego de acesso à API aumentou inesperadamente. O servidor é obrigado a retornar ao seu estado normal em um máximo de cinco minutos. Então, se você continuar tendo o problema, ou se você continuar recebendo um erro HTTP 5XX de qualquer tipo, fique à vontade para contatar a equipe de suporte. 
-
-Precisa de Ajuda?  
-
-Para mais informações ou ajuda, consulte o seguinte: 
-Dê uma olhada em nossos tutoriais para ver exemplos detalhados do uso da API. Verifique nossa seção de perguntas frequentes para ver as respostas das perguntas mais comuns. Junte-se à nossa comunidade e use o fórum para trocar ideias com outros desenvolvedores e obter suporte. 
-
- 
+Tutoriais: Exemplos detalhados de como usar a API.
+FAQ: Respostas para as perguntas mais comuns.
+Fórum da Comunidade: Junte-se à nossa comunidade para trocar ideias com outros desenvolvedores e obter suporte.
 
 Diagrama - JWT
 

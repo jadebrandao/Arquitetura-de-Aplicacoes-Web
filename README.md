@@ -58,10 +58,16 @@ Os limites de taxa e uso da API JWT User são os seguintes:
 ## Resposta HTTP 503
 Uma resposta HTTP 503 indica que o tráfego da API aumentou inesperadamente. O servidor deve retornar ao normal em um máximo de cinco minutos. Se o problema persistir ou se você continuar recebendo qualquer erro HTTP 5XX, sinta-se à vontade para contatar a equipe de suporte.
 
+## Conclusão
+A API JWT User oferece autenticação segura com JSON Web Tokens (JWT), permitindo acesso a endpoints protegidos por diferentes níveis de permissão (ADMIN, MODERADO, comum). Para começar, obtenha uma chave de API, inclua-a em solicitações HTTPS e utilize tokens JWT para autenticação. A API possui limites de taxa de 300 solicitações por minuto por chave de API, com respostas detalhadas sobre o status da taxa de solicitações. Em caso de aumento de tráfego repentino, a API retorna um HTTP 503 temporário. Para mais suporte, nossa equipe está à disposição.
+
 
 ### Diagrama - JWT
 
-<img width="331" alt="image" src="https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/035ad773-4f97-4ece-88c2-f269b1926c13">
+<img width="536" alt="image" src="https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/7240088a-40c0-459c-8339-21c74ad38050">
+
+"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2FbEiW3rEEJMkcQHEbLwKwfV%2FUntitled%3Fnode-id%3D0-1%26t%3DioDMWGA2hCHjTifX-1" 
+
 
 
 ### Imagens do Insomnia em execusão: 

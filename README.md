@@ -58,13 +58,6 @@ Os limites de taxa e uso da API JWT User são os seguintes:
 ## Resposta HTTP 503
 Uma resposta HTTP 503 indica que o tráfego da API aumentou inesperadamente. O servidor deve retornar ao normal em um máximo de cinco minutos. Se o problema persistir ou se você continuar recebendo qualquer erro HTTP 5XX, sinta-se à vontade para contatar a equipe de suporte.
 
-## Precisa de Ajuda?
-Para mais informações ou assistência, consulte os seguintes recursos:
-
-- Tutoriais: Exemplos detalhados de como usar a API.
-- FAQ: Respostas para as perguntas mais comuns.
-- Fórum da Comunidade: Junte-se à nossa comunidade para trocar ideias com outros desenvolvedores e obter suporte.
-
 
 ### Diagrama - JWT
 

@@ -68,7 +68,8 @@ Para mais informações ou assistência, consulte os seguintes recursos:
 
 ### Diagrama - JWT
 
-<img width="328" alt="2024-06-14_19h03_18" src="https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/ece95c54-a4fa-4e08-9127-3d193eb46e27">
+<img width="331" alt="image" src="https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/035ad773-4f97-4ece-88c2-f269b1926c13">
+
 
 ### Imagens do Insomnia em execusão: 
 

@@ -84,7 +84,6 @@ A API JWT User oferece autenticação segura com JSON Web Tokens (JWT), permitin
 
 <img width="536" alt="image" src="https://github.com/jadebrandao/Arquitetura-de-Aplicacoes-Web/assets/108814737/7240088a-40c0-459c-8339-21c74ad38050">
 
-(https://bit.ly/3XpgaHr)
 
 
 ### Imagens do Insomnia em execusão: 
